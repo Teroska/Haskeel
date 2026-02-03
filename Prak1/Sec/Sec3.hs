@@ -1,7 +1,7 @@
 main :: IO ()
 main = do
     let maxRec :: [Int] -> Int
-        maxRec [] = error "Empty list"
+        maxRec [] = error "Порожній список"
         maxRec [x] = x
         maxRec (x:xs) = max x (maxRec xs)
     
