@@ -11,6 +11,16 @@ module LibraryDomain
     , averagePageCount
       
     ) where
+        
+data Book = Book {
+    bookId    :: Int,
+    title     :: String,
+    author    :: String,
+    year      :: Int,
+    genre     :: Genre,
+    pageCount :: Int,
+    status    :: BookStatus
+} deriving (Show, Eq)
 
 data Genre
     = Fiction 
@@ -27,15 +37,7 @@ data BookStatus
     | Archived
     deriving (Show, Eq)
 
-data Book = Book {
-    bookId    :: Int,
-    title     :: String,
-    author    :: String,
-    year      :: Int,
-    genre     :: Genre,
-    pageCount :: Int,
-    status    :: BookStatus
-} deriving (Show, Eq)
+
 
 libraryCatalog :: [Book]
 libraryCatalog = 
