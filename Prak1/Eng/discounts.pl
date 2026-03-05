@@ -80,6 +80,20 @@ all_active_discounts(ResultList) :-
              discount_type(DiscId, Percent, _)),
             ResultList).
 
+% Обчислює середній чек для всіх клієнтів, які отримали знижку.
+average_market_check(Avg) :-
+    findall(Check, average_check(_, Check), Checks),
+    sum_list(Checks, Total),
+    length(Checks, Count),
+    Count > 0,
+    Avg is Total / Count.
+
+% Збирає список VIP-клієнтів, у яких середній чек більший за середній ринковий чек.
+get_premium_candidates(Candidates) :-
+    average_market_check(MarketAvg),
+    findall(Name, 
+            (client(Name, vip), average_check(Name, PersonalCheck), PersonalCheck > MarketAvg), 
+            Candidates).
 
 % Предикат верхнього рівня для запиту знижки конкретного клієнта з описом
 advise_discount_for(Client) :-
