@@ -67,7 +67,6 @@ recommended_discount(Client, none) :-
     Amount =< 300.
 
 
-
 % Список усіх клієнтів, які отримали певний тип знижки
 clients_by_discount(DiscountId, ClientList) :-
     findall(Client, recommended_discount(Client, DiscountId), ClientList).
