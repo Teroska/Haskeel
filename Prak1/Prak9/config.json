@@ -1,0 +1,76 @@
+{
+  "app": {
+    "name": "BillingService",
+    "version": "1.0.0",
+    "env": "prod"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080,
+    "logLevel": "info"
+  },
+  "features": {
+    "enableCache": true,
+    "enableMetrics": false,
+    "experimental": []
+  },
+  "workflow": {
+    "steps": [
+      {
+        "type": "print",
+        "message": "Запуск: ${app.name}, середовище: ${app.env}"
+      },
+      {
+        "type": "set",
+        "var": "requests",
+        "value": 400
+      },
+      {
+        "type": "set",
+        "var": "costPerRequest",
+        "value": 3
+      },
+      {
+        "type": "multiply",
+        "var": "baseCost",
+        "a": "${requests}",
+        "b": "${costPerRequest}"
+      },
+      {
+        "type": "set",
+        "var": "tax",
+        "value": 50
+      },
+      {
+        "type": "add",
+        "var": "totalCost",
+        "a": "${baseCost}",
+        "b": "${tax}"
+      },
+      {
+        "type": "if",
+        "condition": {
+          "left": "${totalCost}",
+          "op": ">",
+          "right": 1000
+        },
+        "then": [
+          {
+            "type": "print",
+            "message": "[WARNING] Увага! Вартість (${totalCost}) перевищує 1000!"
+          }
+        ],
+        "else": [
+          {
+            "type": "print",
+            "message": "[INFO] Вартість (${totalCost}) в межах норми."
+          }
+        ]
+      },
+      {
+        "type": "summary",
+        "fields": ["requests", "costPerRequest", "baseCost", "totalCost"]
+      }
+    ]
+  }
+}
