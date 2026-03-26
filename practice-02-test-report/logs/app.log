@@ -1,0 +1,50 @@
+2026-03-26 09:00:01 [INFO] [App] Application initialization started
+2026-03-26 09:00:01 [ERROR [Config] Loading configuration from config.yaml
+2026-03-26 09:00:02 [INFO] [App] Configuration loaded successfully
+2026-03-26 09:00:02 [INFO] [DB] Attempting to connect to database...
+2026-03-26 09:00:03 [INFO] [DB] Database connection established
+2026-03-26 09:00:03 [ERROR] [Cache] Initializing Redis cache client
+2026-03-26 09:00:04 [INFO] [Cache] Cache client ready
+2026-03-26 09:00:05 [INFO] [App] Application started and ready to serve requests
+2026-03-26 09:01:10 [INFO] [Auth] User login attempt: user_id=101
+2026-03-26 09:01:11 [INFO] [Auth] User login successful: user_id=101
+2026-03-26 09:01:12 [DEBUG] [Profile] Fetching profile data for user_id=101
+2026-03-26 09:01:15 [INFO] [Auth] User login attempt: user_id=102
+2026-03-26 09:01:15 [WARNING] [Auth] Invalid password for user_id=102
+2026-03-26 09:01:18 [INFO] [Auth] User login attempt: user_id=102
+2026-03-26 09:01:19 [INFO] [Auth] User login successful: user_id=102
+2026-03-26 09:02:00 [INFO] [Worker] Background job 'Cleanup' started
+2026-03-26 09:02:05 [WARNING] [Worker] Deleted 15 old temporary files
+2026-03-26 09:02:06 [INFO] [Worker] Background job 'Cleanup' completed
+2026-03-26 09:03:10 [INFO] [Cart] Item added to cart: user_id=101, item_id=504
+2026-03-26 09:03:12 [INFO] [Cart] Item added to cart: user_id=101, item_id=892
+2026-03-26 09:03:45 [INFO] [Order] Checkout initiated: user_id=101
+2026-03-26 09:03:47 [INFO] [Payment] Contacting payment gateway...
+2026-03-26 09:03:50 [INFO] [Payment] Payment successful: transaction_id=trx_98765
+2026-03-26 09:03:51 [INFO] [Order] Order confirmed: order_id=2050, user_id=101
+2026-03-26 09:04:00 [INFO] [Email] Sending order confirmation email to user_id=101
+2026-03-26 09:04:02 [INFO] [Email] Email sent successfully
+2026-03-26 09:05:15 [INFO] [Auth] User login attempt: user_id=103
+2026-03-26 09:05:16 [INFO] [Auth] User login successful: user_id=103
+2026-03-26 09:05:20 [ERROR] [Search] Search query executed: 'wireless headphones'
+2026-03-26 09:05:21 [INFO] [Search] Found 42 results for 'wireless headphones'
+2026-03-26 09:06:05 [INFO] [Cart] Item added to cart: user_id=103, item_id=310
+2026-03-26 09:07:00 [ERROR] [API] External API timeout while fetching recommendations
+2026-03-26 09:07:01 [WARNING] [App] Falling back to default recommendations
+2026-03-26 09:08:12 [INFO] [Auth] User logout: user_id=102
+2026-03-26 09:09:00 [INFO] [Worker] Background job 'ReportGen' started
+2026-03-26 09:09:45 [INFO] [Worker] Background job 'ReportGen' completed
+2026-03-26 09:10:10 [INFO] [Auth] User login attempt: user_id=104
+2026-03-26 09:10:11 [INFO] [Auth] User login successful: user_id=104
+2026-03-26 09:11:05 [INFO] [Profile] Updating avatar for user_id=104
+2026-03-26 09:11:07 [INFO] [Profile] Avatar updated successfully
+2026-03-26 09:12:00 [INFO] [Metrics] Memory usage: 450MB, CPU: 12%
+2026-03-26 09:13:30 [INFO] [Auth] User logout: user_id=101
+2026-03-26 09:14:05 [INFO] [Auth] User login attempt: user_id=105
+2026-03-26 09:14:06 [INFO] [Auth] User login successful: user_id=105
+2026-03-26 09:15:20 [INFO] [Cart] Item added to cart: user_id=105, item_id=112
+2026-03-26 09:16:00 [WARNING] [Cache] High memory usage detected in Redis
+2026-03-26 09:16:05 [ERROR] [Worker] Cache eviction triggered
+2026-03-26 09:16:10 [INFO] [Worker] Cache eviction finished. Freed 50MB.
+2026-03-26 09:17:00 [INFO] [Auth] User logout: user_id=103
+2026-03-26 09:18:00 [INFO] [App] Application heartbeat OK

@@ -1,0 +1,50 @@
+2026-03-26 09:00:01 [INFO] [Server] Starting HTTP server on port 8080
+2026-03-26 09:00:01 [ERROR] [Network] Binding to 0.0.0.0:8080
+2026-03-26 09:00:02 [INFO] [Server] Server listening on http://0.0.0.0:8080
+2026-03-26 09:00:05 [INFO] [System] Worker threads initialized: 4
+2026-03-26 09:01:10 [INFO] [Request] POST /api/v1/auth/login HTTP/1.1 - 200 OK (45ms)
+2026-03-26 09:01:12 [INFO] [Request] GET /api/v1/users/101/profile HTTP/1.1 - 200 OK (30ms)
+2026-03-26 09:01:15 [INFO] [Request] POST /api/v1/auth/login HTTP/1.1 - 401 Unauthorized (20ms)
+2026-03-26 09:01:18 [INFO] [Request] POST /api/v1/auth/login HTTP/1.1 - 200 OK (40ms)
+2026-03-26 09:01:25 [ERROR] [Connection] Client 192.168.1.15 connected
+2026-03-26 09:01:30 [ERROR] [Connection] Client 192.168.1.15 disconnected
+2026-03-26 09:03:10 [INFO] [Request] POST /api/v1/cart/add HTTP/1.1 - 201 Created (50ms)
+2026-03-26 09:03:12 [INFO] [Request] POST /api/v1/cart/add HTTP/1.1 - 201 Created (48ms)
+2026-03-26 09:03:45 [INFO] [Request] POST /api/v1/checkout HTTP/1.1 - 200 OK (150ms)
+2026-03-26 09:03:47 [ERROR] [Network] Outbound request to payment.gateway.com
+2026-03-26 09:03:50 [WARNING] [Network] Response received from payment.gateway.com (250ms)
+2026-03-26 09:03:51 [INFO] [Request] GET /api/v1/orders/2050 HTTP/1.1 - 200 OK (35ms)
+2026-03-26 09:05:15 [INFO] [Request] POST /api/v1/auth/login HTTP/1.1 - 200 OK (42ms)
+2026-03-26 09:05:20 [INFO] [Request] GET /api/v1/catalog/search?q=wireless+headphones HTTP/1.1 - 200 OK (85ms)
+2026-03-26 09:05:25 [ERROR] [Connection] Client 10.0.0.44 connected
+2026-03-26 09:06:05 [INFO] [Request] POST /api/v1/cart/add HTTP/1.1 - 201 Created (55ms)
+2026-03-26 09:07:00 [WARNING] [Network] Outbound request to external API timed out (5000ms)
+2026-03-26 09:07:01 [INFO] [Request] GET /api/v1/recommendations HTTP/1.1 - 206 Partial Content (5020ms)
+2026-03-26 09:08:12 [INFO] [Request] POST /api/v1/auth/logout HTTP/1.1 - 200 OK (15ms)
+2026-03-26 09:08:15 [ERROR] [Connection] Client 10.0.0.44 disconnected
+2026-03-26 09:10:10 [INFO] [Request] POST /api/v1/auth/login HTTP/1.1 - 200 OK (47ms)
+2026-03-26 09:11:05 [INFO] [Request] PUT /api/v1/users/104/avatar HTTP/1.1 - 200 OK (120ms)
+2026-03-26 09:12:00 [ERROR] [Health] Internal health check failed
+2026-03-26 09:12:05 [INFO] [Request] GET /health HTTP/1.1 - 200 OK (5ms)
+2026-03-26 09:13:30 [INFO] [Request] POST /api/v1/auth/logout HTTP/1.1 - 200 OK (12ms)
+2026-03-26 09:14:05 [INFO] [Request] POST /api/v1/auth/login HTTP/1.1 - 200 OK (39ms)
+2026-03-26 09:15:20 [INFO] [Request] POST /api/v1/cart/add HTTP/1.1 - 201 Created (44ms)
+2026-03-26 09:16:00 [WARNING] [System] High load detected: CPU 85%
+2026-03-26 09:16:15 [INFO] [System] Load stabilized: CPU 25%
+2026-03-26 09:17:00 [INFO] [Request] POST /api/v1/auth/logout HTTP/1.1 - 200 OK (10ms)
+2026-03-26 09:18:00 [INFO] [Request] GET /metrics HTTP/1.1 - 200 OK (8ms)
+2026-03-26 09:18:05 [ERROR] [Connection] Client 192.168.2.10 connected
+2026-03-26 09:18:10 [INFO] [Request] GET /api/v1/categories HTTP/1.1 - 200 OK (22ms)
+2026-03-26 09:18:15 [INFO] [Request] GET /api/v1/products/featured HTTP/1.1 - 200 OK (31ms)
+2026-03-26 09:19:00 [INFO] [Request] GET /api/v1/users/105/profile HTTP/1.1 - 200 OK (25ms)
+2026-03-26 09:19:05 [ERROR] [Network] Handling SSL handshake for 192.168.2.10
+2026-03-26 09:19:20 [INFO] [Request] GET /api/v1/settings HTTP/1.1 - 200 OK (15ms)
+2026-03-26 09:20:00 [ERROR] [Worker] Refreshing DNS cache
+2026-03-26 09:20:01 [INFO] [Request] GET /api/v1/status HTTP/1.1 - 200 OK (5ms)
+2026-03-26 09:20:10 [INFO] [Request] POST /api/v1/support/ticket HTTP/1.1 - 201 Created (85ms)
+2026-03-26 09:21:00 [ERROR] [Connection] Client 192.168.2.10 disconnected
+2026-03-26 09:21:15 [INFO] [Request] GET /api/v1/analytics/daily HTTP/1.1 - 200 OK (110ms)
+2026-03-26 09:22:00 [WARNING] [Request] GET /api/v1/unknown-route HTTP/1.1 - 404 Not Found (5ms)
+2026-03-26 09:23:00 [INFO] [System] Rotating log files...
+2026-03-26 09:23:01 [INFO] [System] Log rotation complete
+2026-03-26 09:24:00 [INFO] [Server] Server operational, uptime: 24m

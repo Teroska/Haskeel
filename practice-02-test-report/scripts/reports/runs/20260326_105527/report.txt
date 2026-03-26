@@ -1,0 +1,11 @@
+﻿Project: scripts
+Date/Time: 2026-03-26 10:55:27
+Command: python -m pytest sample_py/ -q
+Status: FAIL
+Log: reports\runs\20260326_105527\raw\test_output.txt
+ERROR count: 1
+FAILED count: 0
+--- First 5 ERROR/FAILED ---
+    + FullyQualifiedErrorId : NativeCommandError
+--- Last 5 ERROR/FAILED ---
+    + FullyQualifiedErrorId : NativeCommandError
